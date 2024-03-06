@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript arrays tutorial</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <footer>Copyright &copy Augastine</footer>
+    .......................................................................
+    <script>
+        //first array
+        let cars = ["bmw", "volvo", "honda"];
+        document.getElementById("demo").innerHTML = cars;
+        //retrieving a varriable from an array
+        let bmw = cars[0];
+        document.getElementById("demo").innerHTML = bmw;
+        //length of an array
+        let len = cars.length;
+        document.getElementById("demo").innerHTML = len;
+
+        //create another varriable, here we want to print the second car only
+        let last = cars[cars.length - 1];
+        document.getElementById("demo").innerHTML = last;
+
+        //loop over an array item..taught below
+        cars.forEach((item, index, array) => { console.log(item, index); }); //prints nothing, since result is in console
+
+        //array methods..
+        //no1: toString()=converts an array to a string, e.g
+        document.getElementById("demo").innerHTML = cars.toString();
+        //pop();..removes last element from an array., e.g
+        let last1 = cars.pop();
+        document.getElementById("demo").innerHTML = last1;
+
+
+
+
+
+    </script>
+</body>
+
+</html>

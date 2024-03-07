@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js LOOPS</title>
+</head>
+
+<body>
+    <h1>JavaScript for loops</h1>
+
+    <script>
+        //for loop
+        //while loop
+        //breaking out of a loop
+        //skipping a loop cycle
+
+        //Exmples start below:...............................................
+        let x;
+        for (x = 0; x < 5; x++)
+            console.log(x)
+
+        //while loop..........................................................
+        let y = 1;
+        while {
+            (y <= 5;)
+        console.log(y)
+        y++
+        } //...........will dispaly 1 to 5
+
+        //do-while loop........................................................
+        let y = 15;
+        do {
+            console.log(y)
+            y++
+        }
+        while (y < 10) //this will print 15 on the console
+        //if the initial number was set to 4, it'll print 4,5,6,7,8,9 on the console
+
+        //breaking out of a loop...break is used to break out of a loop. e.g.............................
+        for (i = 1; i <= 10; i++) {
+            document.write(i + "is the current number")
+            if (i == 5) {
+                break;
+            }
+        }
+
+        //another example:
+        let x;
+        for (x = 1; x <= 10; x++) {
+            console.log(x)
+            if (x == 5)
+                break;
+        } //this will display the value 1,2,3,4,5
+
+        //SKIPPING A PARTICULAR LOOP, continue is used, for example..
+        let x;
+        for (x = 1; x <= 10; x++) {
+            if (x == 5)
+                continue;
+            console.log(x)
+        } // will print 1to4, then skip 5, and continue with 6to10
+
+
+
+
+    </script>
+</body>
+
+</html>
